@@ -1,0 +1,1 @@
+import"./chunk-TMC7WMLO.js";var o=[{path:"dashboard",data:{title:"Admin / Dashboard"},loadComponent:()=>import("./chunk-JE64Y2RL.js").then(t=>t.DashboardComponent)},{path:"customers",data:{title:"Customer"},loadChildren:()=>import("./chunk-QUMMYPBE.js").then(t=>t.routes)}];export{o as routes};
