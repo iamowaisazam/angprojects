@@ -1,0 +1,1 @@
+import{Ra as i,Sa as a,X as o,Za as r,cb as s}from"./chunk-WN3FOJ7L.js";import"./chunk-4CLCTAJ7.js";var d=(()=>{let e=class e{};e.\u0275fac=function(n){return new(n||e)},e.\u0275cmp=o({type:e,selectors:[["app-home"]],standalone:!0,features:[s],decls:2,vars:0,template:function(n,p){n&1&&(i(0,"p"),r(1,"home works!"),a())}});let t=e;return t})();export{d as HomeComponent};
