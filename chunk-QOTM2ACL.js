@@ -1,1 +1,0 @@
-import"./chunk-4CLCTAJ7.js";var o=[{path:"slider",data:{title:"slider"},loadComponent:()=>import("./chunk-MGMZ3LDJ.js").then(t=>t.SettingHomeSliderComponent)},{path:"about",data:{title:"About"},loadComponent:()=>import("./chunk-UTFLB72T.js").then(t=>t.HomeAboutComponent)}];export{o as routes};
