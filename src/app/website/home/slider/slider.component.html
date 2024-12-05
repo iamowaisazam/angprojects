@@ -1,0 +1,30 @@
+
+
+
+
+
+@if(this.data){
+<div class="container-fluid px-1">
+      @for (item of this.data; track i; let i = $index) {
+
+        <div class="slide_bg" [ngClass]="{'active': this.activeI == i}" 
+        style="background-image:url('./assets/web/cladimage.png');" >
+          <div class="d-flex justify-content-between slider" >
+            <div class=" align-self-center slider-left">
+              <p>{{item.title}}</p>
+                  <div class="SliderButton"><a routerLink="item.link">{{item.button}}</a></div>
+            </div>
+            <div class=" slider-right">
+              <img [src]="apiUrl+'/'+item.image"  />
+            </div>
+          </div>
+        </div>
+      }
+
+    <div class="circles">
+        @for (item of this.data; track i; let i = $index) {
+         <span (click)="this.changeSlide(i)" class="circle"  [ngClass]="{'active': this.activeI == i}" ></span>
+        }
+    </div>
+</div>
+}

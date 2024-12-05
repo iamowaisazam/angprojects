@@ -1,0 +1,138 @@
+
+
+
+/*  explore section start */
+.noticias .noticias-explore p {
+    margin-bottom: 20px;
+}
+
+.noticias .noticias-explore .explore {
+    margin-top: 40px;
+}
+
+.noticias-explore .explore-description{
+    color: rgba(4, 30, 66, 0.55)!important;
+}
+
+
+.noticias .noticias-explore .explore h2 {
+    margin-bottom: 40px;
+    text-align: center;
+    color: #594EE6;
+}
+
+.noticias .noticias-explore .explore .input-wrap {
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.noticias .noticias-explore .explore .input-wrap input {
+    height: 70px;
+    border-radius: 100px;
+    border: 2px solid #594EE6;
+    background-color: white;
+    outline: none;
+    font-size: 24px;
+    padding: 20px;
+
+}
+
+.noticias .noticias-explore .explore .input-wrap button {
+    all: unset;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #594EE6;
+    color: #fff;
+    font-size: 22px;
+    padding-top: 1px;
+    box-sizing: border-box;
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.noticias .noticias-explore .explore .tabs ul {
+    display: flex;
+    gap: 10;
+    flex-wrap: wrap;
+    list-style: none;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.noticias .noticias-explore .explore .tabs ul li {
+    margin: 5px;
+}
+
+.noticias .noticias-explore .explore .tabs ul li a.active {
+    color: rgba(220, 222, 240, 1);
+    background-color: #9093B2;
+}
+
+.noticias .noticias-explore .explore .tabs ul li a {
+    padding: 6px 20px;
+    border: 1px solid #9093B2;
+    border-radius: 40px;
+    color: #9093B2;
+    font-size: 16px;
+    display: inline-block;
+    font-family: 'Figtree';
+    font-weight: 400;
+}
+
+
+
+@media (max-width: 991px) {
+    .noticias .noticias-explore p {
+        font-size: 18px;
+    }
+
+    .noticias .noticias-explore .explore {
+        margin-top: 30px;
+    }
+
+    .noticias .noticias-explore .explore h2 {
+        font-size: 28px;
+    }
+
+    .noticias .noticias-explore .explore .input-wrap {
+        margin-bottom: 40px;
+    }
+
+    .noticias .noticias-explore .explore .input-wrap input {
+        height: 60px;
+
+    }
+
+    .noticias .noticias-explore .explore .input-wrap button {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+
+    .noticias .noticias-explore .explore .tabs ul {
+        margin-top: 30px;
+    }
+
+}
+
+
+/*  explore section end */
+
+
+
+
+
+
+
+

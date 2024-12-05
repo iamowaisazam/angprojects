@@ -1,0 +1,101 @@
+<div class="cooperation-hero">
+    <div class="coo-header"></div>
+    <div class="my_container">
+
+        @if(this.service.page?.head?.description){
+        <p class="body-1 text-azul-indigo text-center text-lg-justify " [innerHTML]="this.service.page?.head?.description" ></p>
+        }
+        
+        <div class="cooperacion-cards-wrap">
+            <h2 class="heading-1 text-violeta mb-4">{{this.service.page?.head?.title}}</h2>
+
+            <div class="cooperacion-card">
+                <div class="row g-0">
+                    <div class="col-lg-5 col-xl-4 text-center text-lg-start">
+                        <div class="heading h-100">
+                            <h3 class="heading-1 text-azul-indigo">{{this.service.page?.work?.title1}}</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-xl-8 text-center text-lg-start">
+                        @if(this.service.page?.work?.description1){
+                        <div class="card-text body-1 text-azul-indigo text-center text-lg-justify" [innerHTML]="this.service.page?.work?.description1">
+                        </div>
+                       }
+                    </div>
+                </div>
+            </div>
+
+            <div class="cooperacion-card">
+                <div class="row g-0">
+                    <div class="col-lg-5 col-xl-4 text-center text-lg-start">
+                        <div style="background-color: rgba(138, 230, 222, 1);" class="heading h-100">
+                            <h3 class="heading-1 text-azul-indigo">{{this.service.page?.work?.title2}}</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-xl-8 text-center text-lg-start">
+                        @if(this.service.page?.work?.description2){
+                        <div class="card-text body-1 text-azul-indigo text-center text-lg-justify" [innerHTML]="this.service.page?.work?.description2">
+                        </div>
+                       }
+                    </div>
+                </div>
+            </div>
+
+            <div class="cooperacion-card">
+                <div class="row g-0">
+                    <div class="col-lg-5 col-xl-4 text-center text-lg-start">
+                        <div class="heading h-100">
+                            <h3 class="heading-1 text-azul-indigo text-center">{{this.service.page?.work?.title3}}</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 col-xl-8 text-center text-lg-start">
+                        @if(this.service.page?.work?.description3){
+                        <div class="card-text body-1 text-azul-indigo text-center text-lg-justify" [innerHTML]="this.service.page?.work?.description3" >
+                         
+                        </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Institucional SECTION START -->
+<section class="Institucional">
+    <div class="my_container text-center text-lg-start">
+        <h2 class="heading-1 text-violeta"> {{this.service.page?.agreements?.title}}</h2>
+        @if(this.service.page?.agreements?.description){
+        <div class="body-1 text-azul-indigo text-center text-lg-justify" [innerHTML]="this.service.page?.agreements?.description" ></div>
+        }
+     
+
+        <div class="row institucional-cards">
+            <div class="col-sm-6">
+                <div class="inst-card">
+                    <div class="card-img">
+                        <img [src]="this.apiUrl+'/'+this.service.page?.agreements?.image1" width="100%" [alt]="this.service.page?.agreements?.title1" />
+                    </div>
+                    <div class="card-text">
+                        <h3 class="heading-3 text-azul-indigo">{{this.service.page?.agreements?.title1}}</h3>
+                        <a [href]="this.service.page?.agreements?.link1">Ver más</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-6">
+                <div class="inst-card">
+                    <div class="card-img">
+                        <img [src]="this.apiUrl+'/'+this.service.page?.agreements?.image2" width="100%" [alt]="this.service.page?.agreements?.title2" />
+                    </div>
+                    <div class="card-text">
+                        <h3 class="heading-3 text-azul-indigo">{{this.service.page?.agreements?.title2}}</h3>
+                        <a [href]="this.service.page?.agreements?.link2">Ver más</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>
+<!-- Institucional SECTION END -->

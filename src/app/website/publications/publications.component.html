@@ -1,0 +1,42 @@
+
+
+    <app-doc-header></app-doc-header>
+    <app-doc-banner></app-doc-banner>
+    <app-doc-explorer></app-doc-explorer>
+    <app-doc-declare></app-doc-declare>
+    <app-doc-repository></app-doc-repository>
+
+    <!-- ABOUT SECTION START -->
+    <section style="background-color: #C1C4E8;" class="py-5 bg-violeta about-section">
+        <div class="my_container text-center text-lg-start">
+            <h2 class="heading-1 text-violeta">{{this.service.page?.documents?.title1}}</h2>
+           
+            @if(this.service.page?.documents?.description1){
+            <div [innerHTML]="this.service.page?.documents?.description1" class="body-1 text-azul-indigo text-center text-lg-justify">
+            </div>
+            }
+
+            <div class="text-center text-lg-start">
+                <a class="button-1" [href]="this.service.page?.documents?.link1">Ver más</a>
+            </div>
+        </div>
+    </section>
+    <!-- ABOUT SECTION END -->
+
+    
+    <!-- DOCUMENT OFFICIAL SECTION START -->
+    <section class="py-5 bg-azul-aguamarina-claro doc-official">
+        <div class="my_container text-center text-lg-start ">
+            <h2 class="heading-1">{{this.service.page?.documents?.title2}}</h2>
+            @if(this.service.page?.documents?.description2){
+            <div [innerHTML]="this.service.page?.documents?.description2" class="body-1 text-azul-indigo text-center text-lg-justify">
+            </div>
+            }
+            <div class="text-center text-lg-start">
+                <a class="button-1" [href]="this.service.page?.documents?.link2">Ver más</a>
+            </div>
+        </div>
+    </section>
+    <!-- DOCUMENT OFFICIAL SECTION END -->
+
+

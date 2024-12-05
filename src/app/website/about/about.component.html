@@ -1,0 +1,57 @@
+<app-website-about-banner></app-website-about-banner>
+
+<section class="hero-section" >
+    <div class="p-5 text-center ">
+        <p class="heading-2 text-azul-indigo p-0 m-0" >{{this.service.page?.about?.top}}</p>
+    </div>
+</section>
+
+<section class="creation-section py-sm-5" >
+    <div class="my_container">
+        <h3 class="heading-1 text-violeta py-3 text-center text-lg-start " >{{this.service.page?.about?.title}}</h3>
+        <p style="white-space: break-spaces;" class="body-1 text-azul-indigo text-center text-lg-justify" >
+            {{this.service.page?.about?.description}}
+        </p>
+    </div>
+</section>
+
+<section class="mission-section d-flex">
+    <div class="mission-left" >
+        <div class="" >
+            <h3 class="heading-1 text-violeta text-pr py-sm-3 text-center text-lg-start">{{this.service.page?.mission?.title}}</h3>
+            <p style="text-align: justify;" class="body-1 text-azul-indigo text-center text-lg-justify" >{{this.service.page?.mission?.description}}</p>
+            <div class="text-center text-lg-start" >
+                <a [href]="this.service.page?.mission?.button_1_link" > <img [src]="this.apiUrl+'/'+this.service.page?.mission?.button_1_image"/>
+                    <span>{{this.service.page?.mission?.button_1_text}}</span>
+                </a>
+                <br>
+                <a [href]="this.service.page?.mission?.button_2_link"> <img [src]="this.apiUrl+'/'+this.service.page?.mission?.button_2_image"/>
+                    <span>{{this.service.page?.mission?.button_2_text}}</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="mission-right">
+        <div class="text-center text-lg-end" >
+            <img class="banner_img" [src]="this.apiUrl+'/'+this.service.page?.mission?.image" />
+        </div>
+    </div>
+</section>
+
+<app-website-about-map></app-website-about-map>
+
+<section class="gobernanza-section" > 
+    <div class="my_container" >
+        <h3 class="heading-1 text-azul-indigo text-center text-lg-start" >{{this.service.page?.gobernanza?.title}}</h3>
+        <p class="body-1 text-azul-indigo text-center text-lg-justify" >
+            {{this.service.page?.gobernanza?.description}}
+        </p>
+    </div>
+</section>
+
+<app-website-about-directors> </app-website-about-directors>
+<app-wesbite-about-team> </app-wesbite-about-team>
+<app-website-about-director-country></app-website-about-director-country>
+
+<app-website-about-council></app-website-about-council>
+<app-website-about-previous-member></app-website-about-previous-member>

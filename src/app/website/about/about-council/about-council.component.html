@@ -1,0 +1,47 @@
+<section>
+    <div class="my_container">
+        
+        <div>  
+            <h3 class="heading-1 text-center text-lg-start">{{this.service.page?.nuestroconsejo?.title}}</h3>
+            <p class="body-1 text-center text-lg-justify">{{this.service.page?.nuestroconsejo?.description}}</p>
+        </div>
+
+        <div class="directros-list" >
+            <h3 class="heading-2 text-azul-indigo py-2 text-center text-lg-start">{{this.service.page?.nuestroconsejo?.presidente}}</h3>
+
+            <div class="box my-3" >
+                <div class="row">
+                    <div class="text-center  col-md-3">
+                        <img [src]="this.apiUrl+'/'+this.service.page?.nuestroconsejo?.presidenteimg" class="dir_img"  />
+                    </div>
+                    <div class="text-center text-lg-start col-md-9 align-self-center ">
+                        <p class="heading-3 text-azul-indigo name" >{{this.service.page?.nuestroconsejo?.presidentetitle}}</p>
+                        <p class="body-2 detail text-center text-lg-justify" >{{this.service.page?.nuestroconsejo?.presidentedes}}</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <h4 class="heading-2 text-azul-indigo py-2 text-center text-lg-start" >{{this.service.page?.nuestroconsejo?.miembros}}</h4>
+
+            @if(this.service.page?.nuestroconsejo?.posts) {
+            @for (item of this.service.page?.nuestroconsejo?.posts; track i; let i = $index) {
+
+                    <div class="box my-3" >
+                        <div class="row">
+                            <div class="text-center  col-md-3">
+                                <img [src]="this.apiUrl+'/'+item.image" class="dir_img"  />
+                            </div>
+                            <div class="text-center text-lg-start col-md-9 align-self-center ">
+                                <p class="heading-3 text-azul-indigo name" >{{item.title}}</p>
+                                <p class="body-2 detail text-center text-lg-justify " >{{item.description}}</p>
+                            </div>
+                        </div>
+                    </div>
+                }
+             }
+
+        </div>
+        
+    </div>
+</section>
